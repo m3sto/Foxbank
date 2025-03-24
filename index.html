@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxbank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Yükleme Ekranı -->
+    <div class="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Giriş Ekranı -->
+    <div class="login-container hidden">
+        <img src="https://raw.githubusercontent.com/m3sto/Foxbank/main/assets/logo.png" class="logo">
+        <form id="loginForm">
+            <input type="text" placeholder="Kullanıcı Adı" required>
+            <input type="password" placeholder="Şifre" required>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </div>
+
+    <!-- Ana Arayüz -->
+    <div class="dashboard hidden">
+        <!-- Header -->
+        <header>
+            <button class="menu-btn">☰</button>
+            <h1>Foxbank</h1>
+            <div class="balance">₺0.00</div>
+        </header>
+
+        <!-- Transfer Formu -->
+        <div class="transfer-form">
+            <h2>Para Transferi</h2>
+            <form id="transferForm">
+                <input type="number" placeholder="Alıcı ID" required>
+                <input type="number" placeholder="Miktar" required>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+
+        <!-- İşlem Geçmişi -->
+        <div class="transactions">
+            <h3>Son İşlemler</h3>
+            <div class="transaction-list"></div>
+        </div>
+
+        <!-- Yan Menü -->
+        <div class="side-menu">
+            <div class="menu-header">
+                <h2>Menü</h2>
+                <button class="close-btn">×</button>
+            </div>
+            <div class="menu-content">
+                <a href="#" class="menu-item">Hesap Bilgileri</a>
+                <a href="#" class="menu-item">Ayarlar</a>
+                <a href="#" class="menu-item">Hakkında</a>
+                <a href="#" class="menu-item">İletişim</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
