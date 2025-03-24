@@ -1,6 +1,6 @@
 // GitHub Data Endpoints
-const USERS_URL = 'https://raw.githubusercontent.com/m3sto/Foxbank/main/data/users.json';
-const TRANSACTIONS_URL = 'https://raw.githubusercontent.com/m3sto/Foxbank/main/data/transactions.json';
+const USERS_URL = 'https://raw.githubusercontent.com/m3sto/Foxbank/main/users.json';
+const TRANSACTIONS_URL = 'https://raw.githubusercontent.com/m3sto/Foxbank/main/transactions.json';
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Yükleme ekranını kapat
